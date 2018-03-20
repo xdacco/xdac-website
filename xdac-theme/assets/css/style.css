@@ -272,8 +272,8 @@ blockquote {
     color: #fff;
 }
 .btn.btn-bordered-grad:before {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;
     border-radius: 100px;
     content: "";
     height: calc(100% + 4px);
@@ -951,7 +951,7 @@ header.global-header {
 }
 
 .navbar.affix {
-    background: #fff;
+    background: #272d3a;
     box-shadow: 0 0 20px -10px rgba(0,0,0,0.8);
 }
 .navbar.affix {
@@ -967,10 +967,11 @@ header.global-header {
 .navbar-brand > img {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    width: 100%;
+    width: 50%;
 }
 .navbar.affix .navbar-brand > img {
-    width: 85%;
+    width: 50%;
+	margin-top: -5px;
 }
 .navbar-nav li a {
     color: #232323;
@@ -1230,19 +1231,24 @@ header.white .navbar.affix-top .navbar-nav li .sub-menu {
 2.1. HEADER COLOR VERSION : BLACK
 ===================================== */
 header.black  .navbar.affix-top .navbar-nav li a{
-    color: #232323;
+    color: #f7f7f7;
 }
 header.black  .navbar.affix-top .navbar.affix {
     background: #232323
 }
 
-header.black  .navbar.affix-top .navbar.affix .navbar-nav li a{
-    color: #f7f7f7
+header.black  .navbar.affix-top {
+    background: #272d3a
+}
+
+header.black  .navbar.affix .navbar-nav li a{
+    color: #272d3a
 }
 
 header.black  .navbar.affix-top .navbar-nav li .sub-menu li a {
-    background: #232323;
-    color: #fff
+   color: #fff  ;
+   background: #272d3a
+    
 }
 
 header.black  .navbar.affix-top .navbar-nav li .sub-menu li a:hover,
@@ -1353,13 +1359,13 @@ header.sticky-white .navbar.affix .navbar-nav li.current-menu-item > a{
 2.3. HEADER STICKY COLOR VERSION : black
 ===================================== */
 header.sticky-black .navbar.affix {
-    background: #232323;
+    background: #292c3b;
 }
 header.sticky-black .navbar-nav li a{
-    color: #232323;
+    color: #292c3b;
 }
 header.sticky-black .navbar.affix {
-    background: #232323
+    background: #292c3b
 }
 
 header.sticky-black .navbar.affix .navbar-nav li a{
@@ -1367,7 +1373,7 @@ header.sticky-black .navbar.affix .navbar-nav li a{
 }
 
 header.sticky-black .navbar-nav li .sub-menu li a {
-    background: #232323;
+    background: #292c3b;
     color: #fff
 }
 
@@ -1780,8 +1786,8 @@ header.sticky-red .navbar-nav li .sub-menu li a {
     width: 60px;
 }
 .awesome-feature-icon span:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #3ddbe7  0%, #0372dd 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to top, #3ddbe7  0%, #0372dd 100%) repeat scroll 0 0;
     border-radius: 50px;
     content: "";
     height: 100%;
@@ -2077,8 +2083,8 @@ header.sticky-red .navbar-nav li .sub-menu li a {
     z-index: 1;
 }
 .social a:after {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, ##3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;
     border-radius: 100px;
     content: "";
     height: 100%;
@@ -2721,11 +2727,11 @@ form .btn-grad:before {
     margin-top: 45px;
 }
 .copyright p {
-    color: #fff;
+    /*color: #fff;*/
     margin-bottom: 0;
 }
 .copyright a {
-    color: #00c9fd;
+    /*color: #00c9fd;*/
 }
 
 /* =====================================

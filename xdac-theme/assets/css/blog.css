@@ -168,19 +168,42 @@ input[type=text], input[type=email], input[type=password], input[type=search], i
     padding: 0px 11px;
     font-size: 12px;
     min-width: 250px;
+	padding-left: 15px;
+	border-radius: 100px;
 }
 input:focus{
     outline: none;
     border-color: #33d8d1;
 }
 input[type=submit], button[type=submit] {
+    /*margin-left: 20px;*/
+    -webkit-border-radius: 100;
+    -moz-border-radius: 100;
+    border-radius: 100px;
+    color: #fff;
+    background: #0092d0;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 14px 50px;
+    height: 40px;
+    border: 1px solid #0085c2;
+    line-height: 1;
+    text-align: center;
+	text-transform: uppercase;
+    z-index: 1;
+/*
     height: 40px;
     border: 1px solid #2cc3bd;
     padding: 0px 17px;
     font-size: 15px;
     background: #33d8d1;
-    color: #fff;
+    color: #fff;*/
 }
+.mailpoet_submit:hover, .mailpoet_submit:focus, .mailpoet_submit:active {
+  background: #292c3b; 
+ }
+ 
 .post-password-form input[type=password] {
     border-radius: 3px;
     border: 1px solid #e8edf2;
