@@ -13,11 +13,8 @@ jQuery(document).ready(function() {
         var token = await XdacTokenCrowdsaleInstance.token.call();
         var XdacTokenInstance = await XdacToken.at(token);
         if(ajax_var.logged_in != 0) {
-            var address = await jQuery.post(ajax_var.url, {
-                action: 'get_wallet_address',
-                security : ajax_var.security,
-            })
-            jQuery("#wallet").val(address);
+            jQuery("#wallet").val(ajax_var.wallet_address);
+            jQuery(".your_balance_div p").append(" "+ajax_var.first_name.toUpperCase() + ":");
         }
         return {
             XdacTokenCrowdsaleInstance: XdacTokenCrowdsaleInstance,
@@ -27,6 +24,7 @@ jQuery(document).ready(function() {
     init('0x59760c7a2CFC181E6A6eea0F4465047eeE5DA2c2').then(function (init) {
         var XdacTokenCrowdsaleInstance =  init.XdacTokenCrowdsaleInstance
         var XdacTokenInstance =  init.XdacTokenInstance;
+
         var contract_address =  '0x59760c7a2CFC181E6A6eea0F4465047eeE5DA2c2';
         var getBalance = async function(address, contract_address) {
             var contributorValues = await XdacTokenCrowdsaleInstance.contributors.call(address)
@@ -45,9 +43,15 @@ jQuery(document).ready(function() {
             var weiAmount = await XdacTokenCrowdsaleInstance.getEthAmount(xdac.toNumber())
             return new web3l.BigNumber(weiAmount).dividedBy(ether(1));
         }
+        jQuery("#eth_am").val(1);
+        getTokenAmount(ether(jQuery("#eth_am").val())).then(function (data) {
+            jQuery("#xdac_am").val(data)
+        })
         function displayBalance(data) {
             if(data.whitelisted) {
                 jQuery(".account_xdac_balance p").html(data.xdac + " XDAC")
+                jQuery(".whitelisted_button").html("Your account was successfully whitelisted " +
+                    "<span style='font-size: 18px; color: green;' class='fa-check'></span>");
             }
             else {
                 if(data.eth) {

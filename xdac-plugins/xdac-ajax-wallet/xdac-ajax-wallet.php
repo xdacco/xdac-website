@@ -9,12 +9,14 @@ function xdac_account_balance_enqueue() {
     wp_register_script( 'account-balance-web3', 'https://cdn.jsdelivr.net/npm/web3@0.19.0/dist/web3.js', null, null, true );
     wp_enqueue_script( 'account-balance' );
     wp_enqueue_script( 'account-balance-web3' );
+    $user_id = get_current_user_id();
     wp_localize_script('account-balance', 'ajax_var', array(
         'url' => admin_url('admin-ajax.php'),
         'nonce' => wp_create_nonce('ajaxnonce'),
         'logged_in' => get_current_user_id(),
-        'plugin_url' => plugins_url('xdac-ajax-wallet')
-
+        'plugin_url' => plugins_url('xdac-ajax-wallet'),
+        'first_name' => get_the_author_meta( 'first_name', $user_id ),
+        'wallet_address' => get_user_meta(get_current_user_id(), 'wallet_address')
     ));
 }
 
