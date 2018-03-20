@@ -1,0 +1,17 @@
+
+body {
+    color: #4c5462;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+body:not(.page-template-template-pagebuilder),
+body.position-static,
+body.add-top-margin{
+    margin-top: 120px;
+}
+
+body.page-template-default .blog-area{
+    padding: 80px 0px;
+}

@@ -1,0 +1,40 @@
+
+/*=============================================
+=            SCORN ACF RADIO IMAGE SELECT PLUGIN =
+=============================================*/
+
+#acf-page_blog_sidebar .acf-radio-list.radio{}
+#acf-page_blog_sidebar .acf-radio-list.radio li {
+	display: inline-block;
+	margin-bottom: 30px;
+	margin-right: 15px;
+}
+#acf-page_blog_sidebar .acf-radio-list.radio li input{
+	display: none;
+}
+#acf-page_blog_sidebar .acf-radio-list.radio li label{
+	display: block;
+	font-weight: 600;
+}
+#acf-page_blog_sidebar .acf-radio-list.radio li img.radio-img{
+	display: block;
+	margin-top: 10px;
+	border-radius: 3px;
+	border: 3px solid #f1f1f1;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+
+
+#acf-page_blog_sidebar .acf-radio-list.radio li img.radio-img:hover,
+#acf-page_blog_sidebar .acf-radio-list.radio li input:checked + img{
+	border: 3px solid #008EC2;
+
+}
+
+
+.appai-csmode-active {
+    background: #b50f0f !important;
+}

@@ -1,0 +1,52 @@
+.btn.btn-style-2,
+.btn.btn-style-2:active,
+.btn.btn-style-2.btn-bordered-white::after,
+.btn.btn-style-2.btn-bordered-grad::before,
+.overlay-grad-two::after,
+.single-feature.feature-style-2::after,
+.awesome-feature.style-2 .awesome-feature-icon span::after,
+.pricing-table-style-2 .pricing-footer::after,
+.pricing-table-style-2 .pricing-footer::before,
+.subscribe-wrapper.home-style-2 .subscribe-box button,
+.contact-box.home-style-2 .form-grad-border,
+.home-style-2 .slick-dots li.slick-active,
+.social.home-style-2 a::after {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+}
+
+.member-description.home-style-2 {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, rgba(238, 15, 111, 0.95) 0%, rgba(248, 138, 130, 0.95) 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(238, 15, 111, 0.95) 0%, rgba(248, 138, 130, 0.95) 100%) repeat scroll 0 0;
+}
+
+.faq-home-2 .panel::before {
+    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(top, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ee0f6f 0%, #f89482 100%) repeat scroll 0 0;
+}
+
+.pricing-table-style-2 .single-price-table:hover .price-value {
+    color: #f89482;
+}
+
+.awesome-feature.style-2:hover .awesome-feature-icon i {
+    background: transparent none repeat scroll 0 0;
+}
+
+.faq-home-2 .panel-title a::after {
+    border: 1px solid #f89482;
+    color: #f89482;
+}
+
+.contact-box.home-style-2 .contact-box-inner,
+.contact-box.home-style-2 .contact-box-inner .address-box {
+    background-color: #4C5462;
+}
+
+.home-style-2 .slick-dots li {
+    border: 1px solid #ee0f6f;
+}
+.btn:active {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
