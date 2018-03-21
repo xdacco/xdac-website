@@ -14,7 +14,7 @@ jQuery(document).ready(function() {
         var XdacTokenInstance = await XdacToken.at(token);
         if(ajax_var.logged_in != 0) {
             jQuery("#wallet").val(ajax_var.wallet_address);
-            jQuery(".your_balance_div p").append(" "+ajax_var.first_name.toUpperCase() + ":");
+            jQuery(".your_balance_div p").append(" <strong>"+ajax_var.first_name.toUpperCase() + "</strong>:");
         }
         return {
             XdacTokenCrowdsaleInstance: XdacTokenCrowdsaleInstance,
