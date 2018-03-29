@@ -21,11 +21,11 @@ jQuery(document).ready(function() {
             XdacTokenInstance: XdacTokenInstance,
         }
     }
-    init('0x59760c7a2CFC181E6A6eea0F4465047eeE5DA2c2').then(function (init) {
+    init('0xF126248Db756Ddb86032feBC785f6f24b7f8EdE9').then(function (init) {
         var XdacTokenCrowdsaleInstance =  init.XdacTokenCrowdsaleInstance
         var XdacTokenInstance =  init.XdacTokenInstance;
 
-        var contract_address =  '0x59760c7a2CFC181E6A6eea0F4465047eeE5DA2c2';
+        var contract_address =  '0xF126248Db756Ddb86032feBC785f6f24b7f8EdE9';
         var getBalance = async function(address, contract_address) {
             var contributorValues = await XdacTokenCrowdsaleInstance.contributors.call(address)
             var eth_balance = contributorValues[0].valueOf() / ether(1);
@@ -50,7 +50,7 @@ jQuery(document).ready(function() {
         function displayBalance(data) {
             if(data.whitelisted) {
                 jQuery(".account_xdac_balance p").html(data.xdac + " XDAC")
-                jQuery(".whitelisted_button").html("Your account was successfully whitelisted " +
+                jQuery(".whitelisted_button").html("Your address was successfully whitelisted " +
                     "<span style='font-size: 18px; color: green;' class='fa-check'></span>");
             }
             else {
@@ -59,7 +59,7 @@ jQuery(document).ready(function() {
                         "please whitelist your address")
                 }
                 else {
-                    jQuery(".account_xdac_balance p").html(data.xdac + " XDAC, please whitelist your address");
+                    jQuery(".account_xdac_balance p").html(data.xdac); // + " XDAC, please whitelist your address");
                 }
             }
             jQuery(".wallet_address_message").html("");
