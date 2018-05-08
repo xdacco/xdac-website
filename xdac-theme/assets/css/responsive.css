@@ -62,7 +62,7 @@
       background: #272d3a;
     }
     .navbar.affix .navbar-brand > img {
-        width: 70%;
+        /*width: 70%;*/
     }
     .navbar-nav {
         margin: 20px -15px 0;

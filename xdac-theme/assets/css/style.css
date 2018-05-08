@@ -200,9 +200,11 @@ blockquote {
     vertical-align: top;
 }
 .btn {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    border: 0 none;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to left, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;*/
+	background: rgba(0, 0, 0, 0);
+    border: 2px solid #019bdb;
+    /*border: 0 none;*/
     border-radius: 100px;
     color: #fff;
     font-size: 16px;
@@ -218,15 +220,16 @@ blockquote {
 .btn:hover,
 .btn:focus,
 .btn:active {
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    color: #fff;
+    background: #019bdb;
+	border: 2px solid #019bdb;
+     /*color: #fff;
     outline: 0 none;
     border: 0 none;
-    text-decoration: none;
+    text-decoration: none;*/
 }
 .btn:active {
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #00c9fd 0%, #81ee8e 100%) repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, #3ddbe7 0%, #0372dd 100%) repeat scroll 0 0;*/
 }
 .btn.btn-bordered-white {
     background: transparent none repeat scroll 0 0;

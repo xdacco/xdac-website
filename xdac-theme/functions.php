@@ -26,7 +26,7 @@ add_action('wp', 'redirectLogedoutUser');
 
 function redirectLogedoutUser() {
 	global $post;
-	if ((int) $post->ID === 3391 || (int) $post->ID === 3416 || (int) $post->ID === 2601  || (int) $post->ID === 3562) {
+	if ((int) $post->ID === 3391 || (int) $post->ID === 3416 || (int) $post->ID === 2601  || (int) $post->ID === 3562  || (int) $post->ID === 4391) {
 
 		if (!is_user_logged_in() AND !isset($wppb_login->ID)) {  // Already logged out
 			wp_redirect(site_url() . '/login/');

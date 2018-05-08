@@ -24,12 +24,12 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="slider-content text-center">
-                        <div class="client-image">
+                        <!--<div class="client-image">
                             <img
-                                src="<?php echo esc_url( $img[0] ); ?>"
-                                alt="<?php echo esc_html( $testimonial->name ); ?>"
+                                src="<?php //echo esc_url( $img[0] ); ?>"
+                                alt="<?php //echo esc_html( $testimonial->name ); ?>"
                                 class="img-responsive img-circle center-block">
-                        </div>
+                        </div>-->
                         <div class="client-testimonial">
                             <h3><?php echo esc_html( $testimonial->name ); ?></h3>
                             <p class="client-designation"><?php echo esc_html( $testimonial->position ); ?></p>
